@@ -16,4 +16,9 @@ class Database
     def self.rides
         RIDES
     end
+
+    def self.add_ride(ride)
+        id = RIDES.keys.max + 1
+        RIDES[id] = ride  
+    end
 end
